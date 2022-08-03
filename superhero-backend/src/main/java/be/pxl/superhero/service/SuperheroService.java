@@ -1,6 +1,7 @@
 package be.pxl.superhero.service;
 
 import be.pxl.superhero.api.SuperheroDTO;
+import be.pxl.superhero.api.SuperheroRequest;
 
 import java.util.List;
 
