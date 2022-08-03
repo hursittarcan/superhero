@@ -40,9 +40,9 @@ public class SuperheroController {
         return new ResponseEntity<>(superheroService.updateSuperhero(superheroId, superheroRequest), HttpStatus.OK);
     }
 
+    @DeleteMapping("/{superheroId}")
     public ResponseEntity<Void> deleteSuperhero(@PathVariable Long superheroId) {
         boolean deleted = superheroService.deleteSuperhero(superheroId);
         return deleted ? new ResponseEntity<>(HttpStatus.OK) : new ResponseEntity<>(HttpStatus.BAD_REQUEST);
     }
-
 }
